@@ -112,7 +112,7 @@ Make sure to download the latest version that does not have FX in the file name.
 4. The created model should appear in the /tesstrain/data/ directory. It will appear as `jewett.traineddata`.
 5. This is the output of our training:
    <p align="center">
-         <img src="/our_files/images/final_error.png"  width="700" height="250">
+         <img src="/our_files/images/final_error.png"  width="900" height="200">
    </p>
 
 ## Post-Processing
