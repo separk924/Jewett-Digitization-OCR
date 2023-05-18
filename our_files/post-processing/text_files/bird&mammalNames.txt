@@ -1,0 +1,300 @@
+﻿BIRDS
+3-toed Woodpecker
+Actitis macularis
+Agelaius
+Am. Merganser
+American Merganser
+Anthus
+Ardea herodias
+Bald Eagle
+Baldpate
+Barrow’s Goldeneye
+Bl. billed Magpie
+Black-billed Magpie
+Black Swift
+Black-throated Grey Warbler
+Black Turnstone
+Blk-th. Grey Warbler
+Blue Grouse
+Bonasa
+Brewers Blackbird
+Bubo
+Bufflehead
+Buteo calurus
+Cal. Shrike
+Canachites
+Canada Goose
+Can Goose
+Canvasback
+Canyon Wren
+Cassins Finch
+Cedar Waxwing
+Ceryle alcyon
+Charitonetta
+Chestnut-backed Chickadee
+Chestnut bk Chickadee
+Chickadee
+Chinese Pheasant
+Chordeiles
+Cliff Swallow
+Colaptes cafer collaris
+Colymbus holboelli
+Cooper Hawk
+Cooper’s Hawk
+Coot
+Corvus
+Crossbill
+Crow
+Cyanocitta stelleri annectens
+Dendragapus
+Dendroica auduboni
+Dendroica townsendi
+Dipper
+Dryobates villosus 
+Duck Hawk
+Duck
+Eared Grebe
+Empidonax
+English Sparrow
+Euphagus cyanocephala
+Falco s. phalana
+Falco sparverius
+Flicker
+Fox Sparrow
+Franklin’s Grouse
+Fulmar
+Gadwall
+Geothlypis tolmie
+Golden cr. Kinglet
+Golden crowned Kinglet
+Golden Eagle
+Goldfinch
+Goshawk
+Greater Yellowlegs
+Great Horned Owl
+Grebe
+Grouse
+Gt. Blue Heron
+Gt. Yellowlegs
+Gt Horned Owl
+G W Teal
+Harlequin Duck
+Harris Woodpecker
+Harris’s Woodpecker
+Hawk Owl
+Hermit Thrush
+Horned Puffin
+House Finch
+House Sparrow
+Hylocichla
+Ixoreus
+Junco
+Kestrel
+Killdeer
+Kingfisher
+Kinglet-sitka
+Larus glaucescens
+Leucosticte
+Lewis Woodpecker
+Lincoln’s Sparrow
+Loon
+Loxia c. minor
+Mallard
+Marila
+Meadowlark
+Melospiza lincoln
+Melospiza melodia
+Merganser
+Merganser
+N.W. Flicker
+Nannus
+Nucifraga
+Oregon Chickadee
+Oregon Towhee
+Oreortyx
+Osprey
+Otocoris
+Ouzel
+Oxyechus
+Pac. Nighthawk
+Pacific Nighthawk
+Penthestes a septentrionalis
+Penthestes gambeli
+Penthestes rufous
+Perdix
+Peregrine Falcon
+Perisoreus capitalis
+Pica hudsonicus
+Pileated Woodpecker
+Pine Siskin
+Pine Siskin
+Pinicola
+Pintail
+Pipilo
+Pipit
+Piranga ludoviciana
+Planesticus m. propinquus
+Podylimbus
+Ptarmigan
+Purple Finch
+Pygmy Owl
+R.B. Nuthatch
+Raven
+Red-breasted Nuthatch
+Red Crossbill
+Redhead
+Red-wing
+Regulus satrapa
+Regulus calendula
+Rhinoceros Auklet
+Rhinocerous Auklet
+Robin
+Ruby-cr Kinglet
+Ruby-crowned Kinglet
+Ruddy Duck
+Ruffed Grouse
+Ruffed Grouse
+Rufus Hummer
+Rufus Hummingbird
+Rusty Song Sparrow
+RW Blackbird
+Sage Thrasher
+Sanderling
+Says Phoebe
+Scaup
+Seiurus
+Shoveller
+Shufelt’s Junco
+Sialia occidentalis
+Sitka Kinglet
+Sitta canadensis
+Sp. Hawk
+Sparrow Hawk
+Spinus pinus
+Spizella arizonae
+Spoonbill
+Spotted Sandpiper
+Spotted Towhee
+Steller’s Jay
+Streaked Horned Lark
+Sturnella neglecta
+Tanager
+Teal
+Thryomanes
+Tree Swallow
+Tyrannus verticalis
+Varied Thrush
+Vaux Swift
+Violet-green Swallow
+Vireo
+W.E. Grosbeak
+Western Bluebird
+Western Evening Grosbeak
+Western Wood Pewee
+Wilson’s Snipe
+Wn. Grebe
+Wn. Wood Pewee
+Wn Crow
+Wood Duck
+Woodpewee
+Wrentit
+Zenaidura
+Zonotrichia leucophrys
+Melospiza m. merrilli
+Nuttallornis borealis
+Myiochanes r. richardsoni
+Solitary Sandpiper
+Vireosylvia gilvus swainsoni
+Cinclus
+Chaetura vauxi
+Regulus s. Olivaceus
+Passerella iliaca schistacea
+Sphyrapicus thyroides
+Ixoreus naevius (navieus)
+Stellula calliope
+Oporornis tolmie
+Buteo b. Calurus
+Carpodacus
+Sialia currucoides
+Asyndesmus lewisi
+Lanius excubitorides
+Dryobates v. monticola
+Pigeon Guillemot
+Cormorant
+D.C. Cormorant
+Puffin
+Tufted Puffin
+L.B. Dowitcher
+Lutescent Wblr or Warbler
+Sitta canadensis
+Song Sp or Sparrow
+Phainopepla
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MAMMALS
+Sciurus
+Eutamias
+affinis
+Ochotona
+Weasel
+Spilogale
+Black bear
+Deer
+Coyote
+Goat
+Mule Deer
+Marmot
+Eutamias cooperi
+Callispermophilus
+Aplodontia
+Marmota
+Silver Grey Squirrel
+Peromyscus
+Cottontail Rabbit
+Snowshoe Hare
+Neotrichas
+Perognathus
+Perodipus
+Thomomys
+Fiber
+Neotoma
+Citellus oregonensis
+Citellus columbianus
+Zapus
+Evotomys
+Microtus macropus
+Microtus mordax
+Neosorex
+Sorex
+Lepus bairdi
+Mustela
