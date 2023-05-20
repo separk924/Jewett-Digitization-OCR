@@ -1,4 +1,4 @@
-# training-jewett
+# Jewett Digitization
 
 ## Description
 
