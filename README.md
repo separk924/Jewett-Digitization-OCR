@@ -115,12 +115,91 @@ Make sure to download the latest version that does not have FX in the file name.
          <img src="/our_files/images/final_error.png"  width="900" height="200">
    </p>
 
-## Post-Processing
-
 ## Run Model
 
-## Output
+To run the trained model, you must run Tesseract with this syntax:
+
+   tesseract test_img.png stdout --psm 0 --oem 0 --tessdata-dir ./directory_containing_data -l font_name
+   This is an example of what we ran in the terminal:
+
+   ```
+   tesseract test0.jpeg stdout --psm 8 --oem 3 --tessdata-dir ./data -l jewett
+   ```
+
+   This is an example image that we would run on the model:
+
+   <p align="center">
+         <img src="/our_files/images/desolation.png"  width="900" height="100">
+   </p>
+
+   This is the transcription of the image of our trained model before post-processing:
+
+   <p align="center">
+         <img src="/our_files/images/desolation_trans.png"  width="600" height="50">
+   </p>
+
+   Although most of the words have not been transcribed perfectly, we can see that it is getting pretty close. This is where post-processing comes in.
+
+
+## Post-Processing
+
+After training, the output of the model had very few entirely correctly spelled words, which created the need for post-processing to attempt to correct as much of the misspellings as possible. The idea of this form of post-processing was born originally from the desire to be able to find the precise Levenshtein distance, that is the minimum number of single character edits to get from one spelling to another, from the model output and the actual transcription. The hope was that the model output would closest resemble the actual word given a limited dictionary of words to choose from. 
+
+Inside of the /our_files directory, the /post-processing directory contains all of the files needed to post-process the output text from the model.
+
+Inside the /post-processing directory, there are several files and folders:
+   
+   * The /text_files directory contains all of the transcriptions of the diaries that have been scanned so far, and dictionaries of all of the words that were detected in the diaries
+   * The /text_replacement_scripts directory contains two different Python scripts that attempt to post-process the transcriptions
+   * The file_distance.py Python script reads two files and outputs average file distance between them
+   * The make_dictionary.py Python script creates a text file containing every word within another text file, attempting to create a dictionary of every word from the transcriptions files
+
+This is the final transcription of the image above after post-processing:
+
+<p align="center">
+         <img src="/our_files/images/deso_post_.png"  width="600" height="50">
+   </p>
+
+## Results
+
+Throughout our experiences working with various texts written by Jewett, we realized how critical and delicate the pre-processing stage is for maintaining our model’s accuracy. While there were only slight, minute differences between some pages, there were glaring, extreme differences between others. Even the features of the same letters within the same page would vary greatly. Due to this problem, this may have had a large effect on our error calculations. 
+
+In its present state, the model that we developed showed a CER of approximately 18\% when tested without post-processing.
+
+Upon evaluating the model's prediction of "sese The canyois of Dratratin and," we noted an edit distance of 7 from using the same Levenshtein distance algorithm discussed in the post-processing segment of this paper. It is important to understand that this edit distance is case sensitive.
+
+Further testing on a couple other lines extracted from the diaries reveals similar statistics of around 18\% CER and around 39\% Word Error Rate (WER).
+
+Including the post-processing state, that same extracted line went from its original prediction to a prediction with only one character edit away from being completely accurate, “see The canyons of Desolatron and”, which is a 3\% CER.
+
+Our resulting average edit distance including post-processing was 11.6 characters for a page of writing.
 
 ## Future Work
 
+We strongly believe that this project should be taken up by another group, and we are dedicated to leaving it in a state that could be easily picked up.
+
+Some challenges that need to be further considered:
+
+1. Cramped and overlapping text
+2. Smudged pages
+3. Pages with drawings or maps
+4. Non-traditionally aligned text
+5. Text that is sideways or upside down
+6. Words that are truly illegible
+7. The commonly found “H” watermark
+8. Learn how to run Tesseract's training on the command line interface
+
+Some ways to improve this project:
+
+1. Increase the size of the data set
+2. Further pre-process more diaries or find new ways to pre-process the data
+3. Find a different OCR engine to train on top of
+4. Create your own Neural Network
+
+
+
 ## Credits
+
+We would like to extend our gratitude to professors Peter Wimberger, Adam A. Smith, and America Chambers for their unwavering support and guidance throughout the process of our research project. Professor Wimberger, we appreciate the enthusiasm and encouragement you brought to all of our weekly meetings. Your professional transcriptions and advice were invaluable to our project. Professor Chambers, thank you for generously giving us your time and counsel that kept us motivated throughout the semester. Lastly, to Professor Smith, we are grateful for the consistent check-ins that helped us stay on track and meet our deadlines.
+
+Our final acknowledgments go to VietOCR for creating jTessBoxEditor, which our project would not exist without, to Google for developing Tesseract and providing documentation, which was the very heart of our implementation, and to all the people that contributed to our project in our human study.
