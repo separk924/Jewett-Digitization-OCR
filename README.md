@@ -120,7 +120,10 @@ Make sure to download the latest version that does not have FX in the file name.
 To run the trained model, you must run Tesseract with this syntax:
 
    tesseract test_img.png stdout --psm 0 --oem 0 --tessdata-dir ./directory_containing_data -l font_name
-   This is an example of what we ran in the terminal:
+   
+   The transcription of the image below is: "see The canyons of Desolation and"
+   
+   This is an example of what would run in the terminal:
 
    ```
    tesseract test0.jpeg stdout --psm 8 --oem 3 --tessdata-dir ./data -l jewett
@@ -157,7 +160,7 @@ Inside the /post-processing directory, there are several files and folders:
 This is the final transcription of the image above after post-processing:
 
 <p align="center">
-         <img src="/our_files/images/deso_post_.png"  width="600" height="50">
+         <img src="/our_files/images/deso_post.png"  width="600" height="50">
    </p>
 
 ## Results
@@ -188,6 +191,7 @@ Some challenges that need to be further considered:
 6. Words that are truly illegible
 7. The commonly found “H” watermark
 8. Learn how to run Tesseract's training on the command line interface
+9. Find someone that is able to correctly transcribe Stanley Jewett's handwriting
 
 Some ways to improve this project:
 
