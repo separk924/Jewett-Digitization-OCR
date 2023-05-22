@@ -148,7 +148,9 @@ To run the trained model, you must run Tesseract with this syntax:
    ```
    tesseract test0.jpeg stdout --psm 8 --oem 3 --tessdata-dir ./data -l jewett
    ```
-
+   
+   **For further explanation on the directory assumptions, the targets and its variables, go to this link: https://tesseract-ocr.github.io/tessdoc/Installation.html and go to the Running Tesseract subsection**                                                                   
+                                                                              
    This is an example image that we would run on the model:
 
    <p align="center">
