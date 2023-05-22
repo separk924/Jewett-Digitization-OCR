@@ -67,7 +67,7 @@ Make sure to download the latest version that does not have FX in the file name.
       java -Xms128m -Xmx1024m -jar jTessBoxEditor.jar
       ```
       
-   c. Click on Tools tab, and then click on Merge Tiff option to create tiff files one-by-one for each line image file, and name it with this format:
+   c. Click on the Tools drop-down tab at the top, and then click on the Merge Tiff option to create tiff files one-by-one for each line image file, and name it with this format:
       
       [fontname].[langname].[expN].tif
       For example:
@@ -91,7 +91,10 @@ Make sure to download the latest version that does not have FX in the file name.
       tesseract jewett.eng.exp0.tif jewett.eng.exp0 batch.nochop makebox
       ```
       
-      This should create all of the box files that contain the coordinates and sizes of each character in the file. It will also provide the guesses for each character. You must go through them one-by-one and correct the coordinates, sizes, and guesses.
+      This should create all of the box files that contain the coordinates and sizes of each character in the file. It will also provide the guesses for each character. You must go through them one-by-one and correct the coordinates, sizes, and guesses by re-opening JTessBoxEditor and opening the tiff and box files in the box editor:
+      * Go to the Box Editor tab at the top of the box editor
+      * Click on Open at the top left of the box editor
+      * Go into the directory with the tiff and box files and click on the tiff file you would like to correct
 
 ## Run Training
 
@@ -104,6 +107,8 @@ Make sure to download the latest version that does not have FX in the file name.
    ```
    TESSDATA_PREFIX=../tesseract/tessdata make training MODEL_NAME=jewett START_MODEL=eng TESSDATA=../tesseract/tessdata MAX_ITERATIONS=3000
    ```
+   
+   **For further explanation on directory assumptions, the targets and its variables, go to this link: https://github.com/tesseract-ocr/tesstrain**
    
    a. The current /tessdata directory may not work. If so, use the tessdata_best Github repo instead. Delete the /tessdata directory that's inside the /tesseract directory, and clone this directory inside of the /tesseract directory:
    
