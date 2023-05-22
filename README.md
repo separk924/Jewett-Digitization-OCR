@@ -52,9 +52,10 @@ Make sure to download the latest version that does not have FX in the file name.
    ```
 2. Download JTessBoxEditor
 
-**For the next steps:
+**For the next steps:**
 
 ** Keep all 3 files in the same directory and name this directory: /jewett-ground-truth
+
 ** Make sure all the files are indexed correctly so the correct tiff files correspond with the correct box files and ground truth files
 
 3. Create Tiff files:
