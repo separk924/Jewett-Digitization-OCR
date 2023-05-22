@@ -85,6 +85,7 @@ Make sure to download the latest version that does not have FX in the file name.
    a. Go into the directory with the tiff files and ground truth files in the terminal and run this line in this format for each tiff file, one at a time (You may also create a python script to automate this or play around with the files in the /tesstrain directory):
    
       tesseract [fontname].[langname].[expN].tif [fontname].[langname].[expN] batch.nochop makebox
+      
       For example, this is an example of the line we ran:
       
       ```
@@ -92,6 +93,7 @@ Make sure to download the latest version that does not have FX in the file name.
       ```
       
       This should create all of the box files that contain the coordinates and sizes of each character in the file. It will also provide the guesses for each character. You must go through them one-by-one and correct the coordinates, sizes, and guesses by re-opening JTessBoxEditor and opening the tiff and box files in the box editor:
+      
       * Go to the Box Editor tab at the top of the box editor
       * Click on Open at the top left of the box editor
       * Go into the directory with the tiff and box files and click on the tiff file you would like to correct
