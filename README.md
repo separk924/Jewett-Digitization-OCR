@@ -52,30 +52,42 @@ Make sure to download the latest version that does not have FX in the file name.
    ```
 2. Download JTessBoxEditor
 
+**For the next steps:
+
 ** Keep all 3 files in the same directory and name this directory: /jewett-ground-truth
+** Make sure all the files are indexed correctly so the correct tiff files correspond with the correct box files and ground truth files
 
 3. Create Tiff files:
 
-   a. Create single-line images (jpg or png is fine)
+   a. Create single-line images (jpg or png is fine). Our team took screenshot images of each single line from our pre-processed images.
    
    b. Go into the JTessBoxEditor directory in the terminal, and open JTessBoxEditor by running this command line:
       ```
       java -Xms128m -Xmx1024m -jar jTessBoxEditor.jar
       ```
       
-   c. Click on Tools tab, and then click on Merge Tiff option to create tiff files one-by-one for each line image file
+   c. Click on Tools tab, and then click on Merge Tiff option to create tiff files one-by-one for each line image file, and name it with this format:
+      
+      [fontname].[langname].[expN].tif
+      For example:
+      
+      ```
+      jewett.eng.exp0.tif
+      ```
    
 4. Create Ground Truth files:
 
-   a. provide transcription for each line image. This should contain just 1 line of text transcribing the words in the line image
+   a. Provide transcription for each line image. This should contain just 1 line of text transcribing the words in the line image
    
 5. Create Box files:
 
-   a. Go into the directory with the tiff files and ground truth files in the terminal and run this line:
+   a. Go into the directory with the tiff files and ground truth files in the terminal and run this line in this format for each tiff file, one at a time (You may also create a python script to automate this or play around with the files in the /tesstrain directory):
    
+      tesseract [fontname].[langname].[expN].tif [fontname].[langname].[expN] batch.nochop makebox
+      For example, this is an example of the line we ran:
+      
       ```
-      tesseract [langname].[fontname].[expN].[file-extension] [langname].[fontname].[expN] batch.nochop makebox
-      Eg:tesseract jewett.eng.exp0.tif jewett.eng.exp0 batch.nochop makebox
+      tesseract jewett.eng.exp0.tif jewett.eng.exp0 batch.nochop makebox
       ```
       
       This should create all of the box files that contain the coordinates and sizes of each character in the file. It will also provide the guesses for each character. You must go through them one-by-one and correct the coordinates, sizes, and guesses.
