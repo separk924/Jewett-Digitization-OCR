@@ -26,6 +26,8 @@ To further train Tesseract on Stanley Jewett’s handwriting, Jewett’s handwri
 
 All images were pre-processed using the Python packages, OpenCV (Open Source Computer Vision Library) and NumPy. Initially, we start with a high quality scan of a page that is then converted to gray scale. The next stage is the most important, and it is known as image binarization or thresholding. In order to remove unwanted lines, we used OpenCV’s connected components function to find all connected components on an image, and filter out pixels less than a certain size. This allowed us to remove these lines without significant alterations to the text. Messier notebooks followed this same four-stage process, but with one added noise removal step. To perform this extra step, Gaussian Blur was applied to the entire image with a kernel size of 3.
 
+Pre-processing files and subfolders can be found inside this folder: /our_files/image_processing/. `image_processing.py` is the file that contains the pre-processing code.
+
 <p align="center">
    <img src="/our_files/images/preprocessing_ex.png"  width="360" height="430">
 </p>
