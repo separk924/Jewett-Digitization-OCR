@@ -231,3 +231,5 @@ Some ways to improve this project:
 We would like to extend our gratitude to professors Peter Wimberger, Adam A. Smith, and America Chambers for their unwavering support and guidance throughout the process of our research project. Professor Wimberger, we appreciate the enthusiasm and encouragement you brought to all of our weekly meetings. Your professional transcriptions and advice were invaluable to our project. Professor Chambers, thank you for generously giving us your time and counsel that kept us motivated throughout the semester. Lastly, to Professor Smith, we are grateful for the consistent check-ins that helped us stay on track and meet our deadlines.
 
 Our final acknowledgments go to VietOCR for creating jTessBoxEditor, which our project would not exist without, to Google for developing Tesseract and providing documentation, which was the very heart of our implementation, and to all the people that contributed to our project in our human study.
+
+**Read more in our essay at the root directory: ./JewettDigitizationEssay.pdf**
